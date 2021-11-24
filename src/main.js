@@ -6,7 +6,6 @@ import {
   eventListenersModule,
   h,
 } from "snabbdom";
-import "./assets/style.css";
 
 const patch = init([
   classModule,
