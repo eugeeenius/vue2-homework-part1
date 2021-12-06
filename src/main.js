@@ -1,3 +1,10 @@
+import one from "./assets/1.jpg"
+import two from "./assets/2.jpg"
+import three from "./assets/3.jpg"
+import four from "./assets/4.jpg"
+import five from "./assets/5.jpg"
+import six from "./assets/6.jpg"
+
 import {
 	init,
 	classModule,
@@ -18,32 +25,32 @@ const app = document.getElementById("app");
 
 const dialogs = [
 	{
-		img: "src/assets/1.jpg",
+		img: one,
 		name: "Jane",
 		message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 	},
 	{
-		img: "src/assets/2.jpg",
+		img: two,
 		name: "Alice",
 		message: "Qui quibusdam quo ratione repellendus sit tenetur ut voluptatum?"
 	},
 	{
-		img: "src/assets/3.jpg",
+		img: three,
 		name: "Mark",
 		message: "distinctio ducimus earum est et expedita "
 	},
 	{
-		img: "src/assets/4.jpg",
+		img: four,
 		name: "Caroline",
 		message: "provident quaerat quam qui, quibusdam sint vero."
 	},
 	{
-		img: "src/assets/5.jpg",
+		img: five,
 		name: "Beth",
 		message: "Qui quibusdam quo ratione repellendus sit tenetur ut voluptatum?"
 	},
 	{
-		img: "src/assets/6.jpg",
+		img: six,
 		name: "Jacob",
 		message: "consectetur adipisicing elit."
 	},
@@ -56,6 +63,7 @@ const makeListItem = (img, name, message) => {
 				width: "80px",
 				height: "80px",
 				borderRadius: "50%",
+				flexShrink: 0,
 				background: `url(${img}) center center / cover no-repeat`
 			}
 		});
